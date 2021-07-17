@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    width: 100%;
+    background-color: #ffda00;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 30px;
+}
+.logo{
+    color: #603d02;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+nav ul li{
+    margin: 0 2px;
+}
+nav ul li a{
+    color: #603d02;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 5px 10 px;
+    font-weight: bold;
+}
+nav ul li:hover a{
+    border-bottom: 2px solid;
+    font-weight: bold;
+    -webkit-transition: all 0.4s 0s cubic-bezier(0.18,0.89,0.32,1.28);
+    transition: all 0.4s 0s cubic-bezier(0.18,0.89,0.32,1.28);
+}
+nav .search_box{
+    display: flex;
+    margin: auto 0;
+    height: 35px;
+    line-height: 35px;
+}
+nav .search_box input{
+    border-color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    background: #fff;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 350px;
+}
+nav .search_box span{
+    color: #603d02;
+    font-size: 20px;
+    background: #fff;
+    height: 100%;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+nav .search_box span:hover{
+    color: #fff;
+}
+nav .search_box span::after{
+    height: 100%;
+    width: 0%;
+    content: '';
+    background: #ffda00;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+nav .search_box span:hover::after{
+    width: 100%;
+}
+nav .bar{
+    position: relative;
+    margin: auto;
+    display: none;
+}
+nav .bar span{
+    position:relative;
+    top: -5px;
+    right: -60px;
+    color: #fff;
+    font-size: 25px;
+}
+.cart ion-icon{
+    vertical-align: bottom;
+    font-size: 25px;
+    padding-right: 5px;
+}
+.cart a{
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    display: none;
+}
+@media screen and (min-width: 426px){
+    nav .bar span{
+        right: 1px;
+    }
+}
+@media screen and (max-width: 1250px){
+    nav{
+        display: block;
+        padding: 0;
+    }
+    nav .logo{
+        display: inline-block;
+        margin: 15px 30px;
+        font-size: 18px;
+    }
+    nav .search_box{
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    nav .search_box input{
+        width: 90%;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        background: #ffda00;
+        height: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+    nav ul li{
+        text-align: center;
+        transition: 0.3s 0.1s all;
+        opacity: 0;
+    }
+    nav ul li a{
+        color: #000;
+        font-size: 18px;
+        padding: 15px;
+        display: block;
+    }
+    nav ul li:nth-child(1){
+        transform: translateX(-150px)
+    }
+    nav ul li:nth-child(2){
+        transform: translateX(-200px)
+    }
+    nav ul li:nth-child(3){
+        transform: translateX(-250px)
+    }
+    nav ul li:nth-child(4){
+        transform: translateX(-300px)
+    }
+    nav ul li:nth-child(5){
+        transform: translateX(-350px)
+    }
+    nav .bar{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 80px;
+        cursor: pointer;
+    }
+    nav .bar #times{
+        display: none;
+    }
+    #check:checked ~ nav .bar #times{
+        display: block;
+    }
+    #check:checked ~ nav .bar #bars{
+        display: none;
+    }
+    #check:checked ~ nav ul{
+        visibility: visible;
+        height: 270px;
+    }
+    #check:checked ~ nav ul li:nth-child(1),
+    #check:checked ~ nav ul li:nth-child(2),
+    #check:checked ~ nav ul li:nth-child(3),
+    #check:checked ~ nav ul li:nth-child(4),
+    #check:checked ~ nav ul li:nth-child(5){
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+section{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    filter: brightness(30%);
+}
+
+/* Navbar */
+
+/* Productos */
+
+.container,
+.products-container {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.image{
+    margin: 10px 30px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.image img{
+    padding: 10px;
+}
+.image .image-body{
+    padding: 20px 10px;
+}
+.image-footer{
+    padding: .75rem 1.25rem;
+    background-color: #ffda00;
+}
+
+.image-footer a{
+    color: #603d02;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Productos */
+
+/* Compras */
+
+.products-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.products-container ion-icon{
+    font-size: 25px;
+    color: grey;
+    margin-left: 1px;
+    margin-right: 1px;
+    cursor: pointer;
+}
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+.product-title {
+    width: 45%;
+}
+.price {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+.quantity {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.total {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+.product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+.products img{
+    width: 150px;
+}
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+.basketTotalTitle{
+    width: 30%;
+}
+.basketTotal{
+    width: 10%;
+}
+
+/* Compras */
