@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+	<style>
+		#box{
+			background:blue;
+			width:100px;
+			height:100px;
+			position:relative;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<button id="mover">Mover</button>
+		<div id="box"></div>
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$('#mover').click(function(){
+				var box = $('#box');
+				box.animate({
+					left: 300
+				});
+				box.animate({
+					top: 300
+				});
+				box.animate({
+					left:0,
+					top: 300
+				});
+				box.animate({
+					left: 0,
+					top:0
+				});
+			});
+		});
+	</script>
+</body>
+</html>

@@ -12,7 +12,6 @@
   outline: none; 
   border:none;
   text-decoration: none !important;
-  text-transform: capitalize;
   transition: all .2s linear;
 }
 
@@ -32,7 +31,6 @@ section{
 
 .btn{
   display: inline-block !important;
-  margin-top: 1rem !important;
   background:var(--yellow) !important;
   color:#191919 !important;
   padding:.8rem 1rem !important;
@@ -667,3 +665,229 @@ section{
 }
 
 /* Responsive */
+
+/* Compra */
+
+.container {
+  font-size: 18px ;
+}
+h5 {
+  cursor: pointer;
+  color: #007bff;
+}
+
+/* Compra */
+
+/* Registro */
+
+main{
+  width: 100%; 
+}
+.content-form{
+  width: 90%;
+  margin: auto;
+  opacity: 0;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+
+}
+
+.content-form h1{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.content-form h4{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.content-form h4 a{
+  color: #0061ea;
+}
+
+.content-form form{
+  width: 400px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.content-form .lbl-email{
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.content-form #email{
+  width: 100%;
+  padding: 10px;
+  border-style: none;
+  outline: 0px;
+  border-bottom: 1px solid #e2e2e2;
+  font-size: 16px;
+}
+
+.content-form #email:focus{
+  border-bottom: 2px solid var(--yellow);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.content-form .lbl-clave{
+  display: block;
+  position: absolute;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+.content-form #clave{
+  width: 100%;
+  padding: 10px;
+  border-style: none;
+  outline: 0px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.content-form #clave:focus{
+  border-bottom: 2px solid var(--yellow);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.content-form .lbl-confirm-clave{
+  display: block;
+  position: absolute;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+.content-form #confirm-clave{
+  width: 100%;
+  padding: 10px;
+  border-style: none;
+  outline: 0px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.content-form #confirm-clave:focus{
+  border-bottom: 2px solid var(--yellow);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.content-check{
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.content-check a{
+  float: right;
+  color: #0061ea;
+}
+
+input[type="button"]{
+  padding: 5px 20px;
+  font-size: 16px;
+  background: var(--yellow);
+  color: var(--black);
+  border-style: none;
+  border-radius: 10px;
+  margin-top: 40px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  outline: 0px;
+}
+
+input[type="button"]:hover{
+  background: var(--black);
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+input[type="button"]:active{
+  background: #6dc5fc;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+}
+
+.content-redes{
+  width: 400px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.content-form .content-redes .facebook h2{
+  background-color: #4867aa !important;
+  color: white !important;
+  width: 40px;
+}
+
+.facebook{
+  width: 100%;
+  display: flex;
+}
+
+.facebook label{
+  margin: auto 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.content-form .content-redes .googleplus h2{
+  background-color: #db4c3c !important;
+  color: white !important;
+  width: 40px;
+}
+
+.googleplus{
+  width: 100%;
+  display: flex;
+}
+
+.googleplus label{
+  margin: auto 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--black);
+}
+/* Registro */
+
+/* Responsive Registro */
+@media screen and (max-width:500px){
+.content-form h1{
+  font-size: 40px;
+}
+
+.content-form form{
+  width: 100%;
+}
+
+.content-form input[type="button"]{
+  width: 100%;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.content-redes{
+  width: 100%;
+}
+}
+
+/* Responsive Registro */
+
+#animacion{
+  background:skyblue;
+  width:100px;
+  height:100px;
+  position:relative;
+}
