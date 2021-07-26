@@ -30,7 +30,7 @@ section{
 }
 
 .btn{
-  display: inline-block !important;
+  display: inline-block;
   background:var(--yellow) !important;
   color:#191919 !important;
   padding:.8rem 1rem !important;
@@ -890,4 +890,41 @@ input[type="button"]:active{
   width:100px;
   height:100px;
   position:relative;
+}
+
+.partner .Colaboradores{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.partner .Colaboradores .box{
+  flex:1 1 30rem;
+  text-align: center;
+  padding:2rem;
+  border:.1rem solid rgba(0,0,0,.3);
+  border-radius: .5rem;
+  overflow: hidden;
+  position: relative;
+}
+.partner .Colaboradores .box h3{
+  margin: 20px;
+  color:var(--black);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.partner .Colaboradores .box .share a{
+  padding:0;
+  height:4rem;
+  width:4rem;
+  line-height: 4rem;
+  text-align: center;
+}
+.partner .Colaboradores .box .share .redes{
+  display: inline-block;
+  color:#191919;
+  padding:.8rem 1rem;
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: pointer;
 }
