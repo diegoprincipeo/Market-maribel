@@ -56,6 +56,7 @@ function procesarCompra(e) {
             timer: 1500
           }).then(function(){
             location.href = "index.html";
+            localStorage.clear();
         })
     }
 }

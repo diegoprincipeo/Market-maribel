@@ -759,14 +759,14 @@ main{
   transition: all 300ms;
 }
 
-.content-form .lbl-confirm-clave{
+.content-form .lbl-confirm_clave{
   display: block;
   position: absolute;
   margin-top: 50px;
   font-size: 16px;
 }
 
-.content-form #confirm-clave{
+.content-form #clave2{
   width: 100%;
   padding: 10px;
   border-style: none;
@@ -776,7 +776,7 @@ main{
   font-size: 16px;
 }
 
-.content-form #confirm-clave:focus{
+.content-form #clave2:focus{
   border-bottom: 2px solid var(--yellow);
   -webkit-transition: all 300ms;
   transition: all 300ms;
@@ -792,7 +792,7 @@ main{
   color: #0061ea;
 }
 
-input[type="button"]{
+input[type="submit"]{
   padding: 5px 20px;
   font-size: 16px;
   background: var(--yellow);
@@ -805,7 +805,7 @@ input[type="button"]{
   outline: 0px;
 }
 
-input[type="button"]:hover{
+input[type="submit"]:hover{
   background: var(--black);
   color: white;
   cursor: pointer;
@@ -813,7 +813,7 @@ input[type="button"]:hover{
   transition: all 300ms;
 }
 
-input[type="button"]:active{
+input[type="submit"]:active{
   background: #6dc5fc;
   -webkit-transition: all 100ms;
   transition: all 100ms;
@@ -860,6 +860,81 @@ input[type="button"]:active{
   font-weight: bold;
   color: var(--black);
 }
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+.formulario__input-error-activo {
+	display: block;
+}
+.formulario__grupo-input i{
+	position: relative;
+  left: 380px;
+}
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
 /* Registro */
 
 /* Responsive Registro */
@@ -872,7 +947,7 @@ input[type="button"]:active{
   width: 100%;
 }
 
-.content-form input[type="button"]{
+.content-form input[type="submit"]{
   width: 100%;
   -webkit-transition: all 300ms;
   transition: all 300ms;
@@ -885,12 +960,18 @@ input[type="button"]:active{
 
 /* Responsive Registro */
 
+/* animacion */
+
 #animacion{
   background:skyblue;
   width:100px;
   height:100px;
   position:relative;
 }
+
+/* animacion */
+
+/* Colaboradores */
 
 .partner .Colaboradores{
   display: flex;
@@ -928,3 +1009,5 @@ input[type="button"]:active{
   text-align: center;
   cursor: pointer;
 }
+
+/* Colaboradores */
