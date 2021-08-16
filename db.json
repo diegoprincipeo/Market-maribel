@@ -1,7 +1,7 @@
 {
     "products": [
         {
-            "id": "Aceite-Primor",
+            "id": 1,
             "imagen": "/img/productos/Aceite-Primor.jpg",
             "producto": "Aceite Primor",
             "descripcion": "Aceite Vegetal Botella de 1Lt.",
@@ -11,7 +11,7 @@
             "stock": 10
         },
         {
-            "id": "Aceite-Sao",
+            "id": 2,
             "imagen": "/img/productos/Aceite-Sao.jpg",
             "producto": "Aceite Sao",
             "descripcion": "Aceite Vegetal Botella de 1Lt.",
